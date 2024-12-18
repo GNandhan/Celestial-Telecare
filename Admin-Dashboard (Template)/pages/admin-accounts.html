@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin-category</title>
+  <link rel="shortcut icon" type="image/png" href="../images/logos/favicon.png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .category-image {
+      height: 200px;
+      /* Set your desired height here */
+      object-fit: cover;
+      /* This will make the image cover the entire container */
+      object-position: center;
+      /* You can adjust the positioning if needed */
+      width: 100%;
+      /* Ensure the image takes up the full width of the container */
+    }
+  </style>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- including the sidebar,navbar -->
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="../index.html" class="text-nowrap logo-img">
+            <img src="../images/logos/logo.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="admin-super.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Admin Dashboard</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-staff.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-book"></i>
+                </span>
+                <span class="hide-menu">Staff</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-dashboard.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Customer Care</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-accounts.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-users"></i>
+                </span>
+                <span class="hide-menu">Accounts</span>
+
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-report.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-ad-2"></i>
+                </span>
+                <span class="hide-menu">Reports</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-emergency.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-ad-2"></i>
+                </span>
+                <span class="hide-menu">Emergency</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-request.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-send"></i>
+                </span>
+                <span class="hide-menu">Requests</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-marketing.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-ad-2"></i>
+                </span>
+                <span class="hide-menu">Marketing</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-notify.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-bell-ringing"></i>
+                </span>
+                <span class="hide-menu">Notification and Alerts</span>
+              </a>
+            </li> -->
+            <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">AUTH</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-login.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-register.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Register</span>
+              </a>
+            </li> -->
+            <!-- <li class="nav-small-cap">
+          <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+          <span class="hide-menu">EXTRA</span>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+            <span>
+              <i class="ti ti-mood-happy"></i>
+            </span>
+            <span class="hide-menu">Icons</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+            <span>
+              <i class="ti ti-aperture"></i>
+            </span>
+            <span class="hide-menu">Sample Page</span>
+          </a>
+        </li> -->
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <!-- <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/"  class="btn btn-primary">Download Free</a> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../images/logos/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <!-- <a href="admin-login.html" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-logout fs-6"></i>
+                  <p class="mb-0 fs-3">Logout</p>
+                </a>
+                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-mail fs-6"></i>
+                  <p class="mb-0 fs-3">My Account</p>
+                </a>
+                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-list-check fs-6"></i>
+                  <p class="mb-0 fs-3">My Task</p>
+                </a> -->
+                    <a href="./admin-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <div class="container-fluid px-0">
+        <div class="card">
+          <div class="card-body p-2">
+            <h1 class="fw-semibold mb-4">Accounts</h1>
+            <div class="row pb-5">
+              <div class="col-lg-4">
+                <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <div class="col-lg-4 ">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+                  Account</button>
+              </div>
+            </div>
+
+
+            <!-- Modals -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                        aria-labelledby="home-tab" tabindex="0">
+                        <form>
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">First name</label>
+                                <input type="text" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Last name</label>
+                                <input type="text" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Age</label>
+                                <input type="text" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Gender</label>
+                                <select name="" id="" class="form-control">
+                                  <option value="">Male</option>
+                                  <option value="">Female</option>
+                                  <option value="">Other</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Text input -->
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="form6Example4">Address</label>
+                            <input type="text" id="form6Example4" class="form-control" />
+                          </div>
+                          <!--  -->
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Phone No</label>
+                                <input type="number" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Password</label>
+                                <input type="password" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Message input -->
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="form6Example7">Additional information</label>
+                            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                          </div>
+                        </form>
+
+                      </div>
+                      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <form>
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Blood Group</label>
+                                <select name="" id="" class="form-control">
+                                  <option value="">A+</option>
+                                  <option value="">A-</option>
+                                  <option value="">B+</option>
+                                  <option value="">B-</option>
+                                  <option value="">O+</option>
+                                  <option value="">O-</option>
+                                  <option value="">AB+</option>
+                                  <option value="">AB-</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Height</label>
+                                <input type="text" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Weight</label>
+                                <input type="text" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Blood Pressure</label>
+                                <input type="number" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Heart Rate</label>
+                                <input type="number" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Glucose Level</label>
+                                <input type="password" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example7">Id Proof</label>
+                                <input type="file" name="" id="" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example7">Health Report</label>
+                                <input type="file" name="" id="" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <form>
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Name:</label>
+                                <input type="text" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Relationship:</label>
+                                <input type="text" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+
+                          </div>
+                          <!--  -->
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example1">Mail id:</label>
+                                <input type="email" id="form6Example1" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example2">Phone No:</label>
+                                <input type="number" id="form6Example2" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mb-4">
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example7">Id Proof</label>
+                                <input type="file" name="" id="" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div data-mdb-input-init class="form-outline">
+                                <label class="form-label" for="form6Example7">Image</label>
+                                <input type="file" name="" id="" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                        tabindex="0">..jjjjjjjjjjjjjjjjjj.</div>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                          aria-selected="true">Basic</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                          aria-selected="false">Health</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                          data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                          aria-selected="false">Family</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Navs ans Tabs -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Clients</button>
+                <!-- <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Operators</button> -->
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Family</button>
+                <!-- <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button> -->
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <!-- table begin -->
+                <div class="table-responsive">
+                  <table class="table text-nowrap mb-0 align-middle  table-hover">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Sl no</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Patients Image</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Patients name</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Age</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Consulting Doctor</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Address</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Number</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Blood Group</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Emergency Contact No</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Edit</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Deactivate</h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">1</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <a href="./admin-report.html" class="mb-0 fw-normal"><img src="../images/logos/user-5.jpg"
+                              alt="" width="50" class="rounded-circle"></a>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">56</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr. Samuel</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">A+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 8113849785</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <!-- <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button> -->
+                          <button class="btn btn-outline-success" data-bs-toggle="modal"data-bs-target="#exampleModal">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">2</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-2.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 2</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">60</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr. Martin</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">O+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 8113849785</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success " data-bs-toggle="modal"data-bs-target="#exampleModal">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">3</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-3.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 3</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">63</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.john paul</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">A-</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 8113849785</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">4</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-1.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 4</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">75</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.Zacharia</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">AB+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 815689477</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">6</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-4.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 6</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">72</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.Ram</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">B+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 815689477</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-2.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 7</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">79</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.Sidharth</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">B+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 815689477</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-4.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 7</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">79</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.Sidharth</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">B+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 815689477</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-1.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 7</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">79</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Dr.Sidharth</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">h-34 North lane second street</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">B+</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">+91 815689477</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-success mb-0 fs-4">Edit</button>
+                        </td>
+                        <td class="border-bottom-0">
+                          <button class="fw-semibold btn btn-outline-danger mb-0 fs-4">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table end -->
+              </div>
+
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                tabindex="0">
+                <!-- table begin -->
+                <div class="table-responsive">
+                  <table class="table text-nowrap mb-0 align-middle  table-hover">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Sl no</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Members Image</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Members Name</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Patients Name</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Relationship</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Mail id</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Phone No</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Id Proof</h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">1</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <a href="./admin-report.html" class="mb-0 fw-normal"><img src="../images/logos/user-5.jpg"
+                              alt="" width="50" class="rounded-circle"></a>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Son</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">2</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-2.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 2</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 2</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Son in law</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">3</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-3.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 3</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Daughter</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">4</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-1.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 4</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Son</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">6</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-4.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 6</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">First Cousin</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-2.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 7</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Son</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-4.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 8</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Brother</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">7</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal"><img src="../images/logos/user-1.jpg" alt="" width="50"
+                              class="rounded-circle"></p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Member 9</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Patient 1</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Son</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">luk123@gmail.com</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">9446109999</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">Aadhar</h6>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table end -->
+              </div>
+            </div>
+            <!-- Navs and Tabs -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/sidebarmenu.js"></script>
+  <script src="../js/app.min.js"></script>
+  <script src="../libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../libs/simplebar/dist/simplebar.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin-category</title>
+  <link rel="shortcut icon" type="image/png" href="../images/logos/favicon.png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=49b0c820-c282-11ee-89aa-aba8dcbbe800&libraries=places"></script>
+  <style>
+    .category-image {
+      height: 200px;
+      /* Set your desired height here */
+      object-fit: cover;
+      /* This will make the image cover the entire container */
+      object-position: center;
+      /* You can adjust the positioning if needed */
+      width: 100%;
+      /* Ensure the image takes up the full width of the container */
+    }
+  </style>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- including the sidebar,navbar -->
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="../index.html" class="text-nowrap logo-img">
+            <img src="../images/logos/logo.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="admin-super.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Admin Dashboard</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-staff.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-book"></i>
+                </span>
+                <span class="hide-menu">Staff</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-dashboard.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Customer Care</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-accounts.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-users"></i>
+                </span>
+                <span class="hide-menu">Accounts</span>
+
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-report.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-ad-2"></i>
+                </span>
+                <span class="hide-menu">Reports</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./admin-emergency.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-ad-2"></i>
+                  </span>
+                  <span class="hide-menu">Emergency</span>
+                </a>
+              </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-request.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-send"></i>
+                </span>
+                <span class="hide-menu">Requests</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-marketing.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-ad-2"></i>
+                </span>
+                <span class="hide-menu">Marketing</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-notify.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-bell-ringing"></i>
+                </span>
+                <span class="hide-menu">Notification and Alerts</span>
+              </a>
+            </li> -->
+            <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">AUTH</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-login.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./admin-register.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Register</span>
+              </a>
+            </li> -->
+            <!-- <li class="nav-small-cap">
+          <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+          <span class="hide-menu">EXTRA</span>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+            <span>
+              <i class="ti ti-mood-happy"></i>
+            </span>
+            <span class="hide-menu">Icons</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+            <span>
+              <i class="ti ti-aperture"></i>
+            </span>
+            <span class="hide-menu">Sample Page</span>
+          </a>
+        </li> -->
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <!-- <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/"  class="btn btn-primary">Download Free</a> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../images/logos/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <!-- <a href="admin-login.html" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-logout fs-6"></i>
+                  <p class="mb-0 fs-3">Logout</p>
+                </a>
+                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-mail fs-6"></i>
+                  <p class="mb-0 fs-3">My Account</p>
+                </a>
+                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                  <i class="ti ti-list-check fs-6"></i>
+                  <p class="mb-0 fs-3">My Task</p>
+                </a> -->
+                    <a href="./admin-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-body p-2">
+            <h1 class="fw-semibold mb-4 p-4">Emergency Contact Numbers</h1>
+            <div class="container my-3">
+              <div class="row justify-content-start">
+                  <div class="col-md-5">
+                      <div class="h3">Search Location</div>
+                      <div class="input-group">
+                          <span class="input-group-text p-3 border-0" style="border-radius: 25px 0px 0px 25px;"><i class="ti ti-search"></i></span>
+                          <input type="text" id="searchInput" class="form-control" style="border-radius: 0px 25px 25px 0px;" placeholder="Search for hospitals..." placeholder-style="color: #ffffff80;">
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center mt-3">
+                  <div class="col-md-6">
+                      <div id="searchResults"></div>
+                  </div>
+              </div>
+          </div>
+            <!-- table begin -->
+            <div class="table-responsive">
+              <table class="table text-nowrap mb-0 align-middle  table-hover">
+                <thead class="text-dark fs-4">
+                  <tr>
+                    <th class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">Sl no</h6>
+                    </th>
+                    <th class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">Category</h6>
+                    </th>
+                    <th class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">Location</h6>
+                    </th>
+                    <th class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">Helpline No</h6>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">1</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Police</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">100</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">2</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ambulance</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">102</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">3</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">National Emergency Number</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">112</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">4</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Fire</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">101</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">5</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Women HelpLine</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">1091</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-bottom-0">
+                      <h6 class="fw-semibold mb-0">6</h6>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Road Accident Emergency Service</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-normal">Ernakulam</p>
+                    </td>
+                    <td class="border-bottom-0">
+                      <p class="mb-0 fw-semibold">1073</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- table end -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function initMap() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                var map = new google.maps.Map(document.getElementById('searchResults'), {
+                    center: userLocation,
+                    zoom: 13
+                });
+
+                var request = {
+                    location: userLocation,
+                    radius: '5000', // search within 5km radius
+                    type: ['hospital']
+                };
+
+                var service = new google.maps.places.PlacesService(map);
+
+                service.nearbySearch(request, function(results, status) {
+                    if (status === google.maps.places.PlacesServiceStatus.OK) {
+                        for (var i = 0; i < results.length; i++) {
+                            createMarker(results[i]);
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    function createMarker(place) {
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+            content: place.name
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=49b0c820-c282-11ee-89aa-aba8dcbbe800&libraries=places&callback=initMap"></script>
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/sidebarmenu.js"></script>
+  <script src="../js/app.min.js"></script>
+  <script src="../libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../libs/simplebar/dist/simplebar.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
